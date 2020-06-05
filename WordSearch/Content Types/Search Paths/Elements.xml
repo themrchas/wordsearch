@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100309022ABFB394BF5909C56B3B42D1480" Name="Search Paths" Group="Custom Content Types" Description="Used for list hosting search paths" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{493ccb24-7199-4e42-9ca0-c9acda217c14}" DisplayName="Include Search Path" Required="FALSE" Name="IncludeSearchPath" />
+      <FieldRef ID="{503f1caa-358e-4918-9094-4a2cdc4bc034}" DisplayName="$Resources:core,Edit;" Name="Edit" Filterable="FALSE" ReadOnly="TRUE" Sortable="FALSE" />
+      <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" DisplayName="$Resources:core,URL;" Name="URL" Required="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

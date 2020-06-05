@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0e162b82-76d4-450b-b0f3-1a5b5cda4e7d}"
+       Name="DeletionCandidate"
+       DisplayName="Deletion Candidate"
+       Type="Boolean"
+       Required="FALSE"
+       Group="Key Word App">
+    <Default>0</Default>
+  </Field>
+</Elements>

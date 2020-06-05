@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3193e508-17a8-4660-b472-6940482f3dbc" solutionId="3193e508-17a8-4660-b472-6940482f3dbc" resetWebServer="false" sharePointProductVersion="15.0" name="WordSearch" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="bc833068-89af-497f-9b38-483923097d25" />
+  </features>
+</package>

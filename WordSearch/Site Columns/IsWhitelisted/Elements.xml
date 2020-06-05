@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{64482876-c829-45d2-a558-d8d2a9fa0df8}"
+       Name="Whitelist"
+       DisplayName="Is Whitelisted"
+       Type="Boolean"
+       Required="TRUE"
+       Group="Key Word App">
+    <Default>0</Default>
+  </Field>
+</Elements>

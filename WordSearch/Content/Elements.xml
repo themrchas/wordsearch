@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\jquery-ui.css" Url="Content/jquery-ui/jquery-ui.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\jquery-ui.structure.css" Url="Content/jquery-ui/jquery-ui.structure.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\jquery-ui.theme.css" Url="Content/jquery-ui/jquery-ui.theme.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\images\ui-icons_444444_256x240.png" Url="Content/jquery-ui/images/ui-icons_444444_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\images\ui-icons_555555_256x240.png" Url="Content/jquery-ui/images/ui-icons_555555_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\images\ui-icons_777620_256x240.png" Url="Content/jquery-ui/images/ui-icons_777620_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\images\ui-icons_777777_256x240.png" Url="Content/jquery-ui/images/ui-icons_777777_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\images\ui-icons_cc0000_256x240.png" Url="Content/jquery-ui/images/ui-icons_cc0000_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui\images\ui-icons_ffffff_256x240.png" Url="Content/jquery-ui/images/ui-icons_ffffff_256x240.png" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b48c8c70-6d8c-4213-ac82-edab96453c7c}"
+       Name="Category"
+       DisplayName="Category"
+       Type="MultiChoice"
+       Required="TRUE"
+       Group="Key Word App">
+  </Field>
+</Elements>

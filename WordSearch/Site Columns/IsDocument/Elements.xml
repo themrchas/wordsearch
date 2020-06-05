@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f76c28d0-b6a7-4866-b804-922edb16310c}"
+       Name="IsDocument"
+       DisplayName="Is Document"
+       Type="Text"
+       Required="FALSE"
+       Group="Key Word App">
+  </Field>
+</Elements>

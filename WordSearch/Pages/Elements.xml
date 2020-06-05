@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module>
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" >
+      <View List="Lists/SearchPaths" BaseViewID="1" WebPartZoneID="SearchPathsZone" WebPartOrder="1"/>
+        <View List="Lists/KeyWords" BaseViewID="1" WebPartZoneID="KeyWordsListZone" WebPartOrder="2"/>
+      <View List="Lists/ResultsList" BaseViewID="1" WebPartZoneID="ResultsListZone" WebPartOrder="3">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+            <metaData>
+              <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart,Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+              <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+            </metaData>
+          <data>
+            <properties>
+             <property name="Title" type="string">Results List</property>
+             </properties>
+         </data>
+      </webPart>
+  </webParts>
+ ]]>
+     
+      </View>
+      
+      
+    </File>
+  </Module>
+</Elements>

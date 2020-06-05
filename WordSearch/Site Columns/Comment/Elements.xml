@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b51d0e94-ea34-4db6-9102-430a20ccbdea}"
+       Name="Comment"
+       DisplayName="Comment"
+       Type="Note"
+       Required="FALSE"
+       NumLines="6"
+       Description="Comment for finding"
+       Group="Key Word App">
+  </Field>
+</Elements>

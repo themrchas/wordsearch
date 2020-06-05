@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Content\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\jquery-ui.css" Target="Content\jquery-ui\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\jquery-ui.structure.css" Target="Content\jquery-ui\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\jquery-ui.theme.css" Target="Content\jquery-ui\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\images\ui-icons_444444_256x240.png" Target="Content\jquery-ui\images\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\images\ui-icons_555555_256x240.png" Target="Content\jquery-ui\images\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\images\ui-icons_777620_256x240.png" Target="Content\jquery-ui\images\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\images\ui-icons_777777_256x240.png" Target="Content\jquery-ui\images\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\images\ui-icons_cc0000_256x240.png" Target="Content\jquery-ui\images\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui\images\ui-icons_ffffff_256x240.png" Target="Content\jquery-ui\images\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

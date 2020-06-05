@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\moment.js" Url="Scripts/moment.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\md5.js" Url="Scripts/md5.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\lodash-4.17.15.js" Url="Scripts/lodash-4.17.15.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\keywords.js" Url="Scripts/keywords.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-ui.js" Url="Scripts/jquery-ui.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jQuery.HillbillyTabs.4.js" Url="Scripts/jQuery.HillbillyTabs.4.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-3.4.1-min.js" Url="Scripts/jquery-3.4.1-min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery.cookie.js" Url="Scripts/jquery.cookie.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jslinkwordsearch.js" Url="Scripts/jslinkwordsearch.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01007BCF1A4BAF814C77B147461345FF2B78" Name="Search Result Item" Group="Custom Content Types" Description="Content type used for a search result entry" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Required="TRUE" Name="LinkTitle" ReadOnly="TRUE" />
+      <FieldRef ID="{b51d0e94-ea34-4db6-9102-430a20ccbdea}" DisplayName="Comment" Required="FALSE" Description="Comment for finding" Name="Comment" NumLines="6" />
+      <FieldRef ID="{f76c28d0-b6a7-4866-b804-922edb16310c}" DisplayName="Is Document" Required="FALSE" Name="IsDocument" />
+      <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" DisplayName="$Resources:core,Title;" Name="LinkTitleNoMenu" ReadOnly="TRUE" />
+      <FieldRef ID="{64482876-c829-45d2-a558-d8d2a9fa0df8}" DisplayName="Is Whitelisted" Required="TRUE" Name="Whitelist" />
+      <FieldRef ID="{0e162b82-76d4-450b-b0f3-1a5b5cda4e7d}" DisplayName="Deletion Candidate" Required="FALSE" Name="DeletionCandidate" />
+      <FieldRef ID="{cad4f326-8830-4413-8e96-7c4a460e0c43}" DisplayName="Item Last Modified" Required="FALSE" Name="ItemLastModified" />
+      <FieldRef ID="{517dc9b9-2a22-4033-8134-1719a3b2afc6}" DisplayName="Is Quarantined" Required="FALSE" Name="IsQuarantined" />
+      <FieldRef ID="{b48c8c70-6d8c-4213-ac82-edab96453c7c}" DisplayName="Category" Required="TRUE" Name="Category" />
+      <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" DisplayName="$Resources:core,URL;" Name="URL" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

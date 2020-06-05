@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{493ccb24-7199-4e42-9ca0-c9acda217c14}"
+       Name="IncludeSearchPath"
+       DisplayName="Include Search Path"
+       Type="Boolean"
+       Required="FALSE"
+       Group="Key Word App">
+    <Default>0</Default>
+  </Field>
+</Elements>

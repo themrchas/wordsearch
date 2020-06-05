@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{cad4f326-8830-4413-8e96-7c4a460e0c43}"
+        Name="ItemLastModified"
+       DisplayName="Item Last Modified"
+       Type="Text"
+       Required="FALSE"
+       Group="Key Word App">
+   </Field>
+</Elements>

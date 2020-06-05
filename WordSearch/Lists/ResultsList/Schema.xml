@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ResultsList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ResultsList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01007BCF1A4BAF814C77B147461345FF2B78" Name="Search Result Item" Group="Custom Content Types" Description="Content type used for a search result entry" Inherits="FALSE" Version="0">
+      <FieldRefs>
+        <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Required="TRUE" Name="LinkTitle" ReadOnly="TRUE" />
+        <FieldRef ID="{b51d0e94-ea34-4db6-9102-430a20ccbdea}" DisplayName="Comment" Required="FALSE" Description="Comment for finding" Name="Comment" NumLines="6" />
+        <FieldRef ID="{f76c28d0-b6a7-4866-b804-922edb16310c}" DisplayName="Is Document" Required="FALSE" Name="IsDocument" /><FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" DisplayName="$Resources:core,Title;" Name="LinkTitleNoMenu" ReadOnly="TRUE" />
+        <FieldRef ID="{64482876-c829-45d2-a558-d8d2a9fa0df8}" DisplayName="Is Whitelisted" Required="TRUE" Name="Whitelist" /><FieldRef ID="{0e162b82-76d4-450b-b0f3-1a5b5cda4e7d}" DisplayName="Deletion Candidate" Required="FALSE" Name="DeletionCandidate" />
+        
+        <FieldRef ID="{cad4f326-8830-4413-8e96-7c4a460e0c43}" DisplayName="Item Last Modified" Required="FALSE" Name="ItemLastModified" />
+        <FieldRef ID="{517dc9b9-2a22-4033-8134-1719a3b2afc6}" DisplayName="Is Quarantined" Required="FALSE" Name="IsQuarantined" />
+        <FieldRef ID="{b48c8c70-6d8c-4213-ac82-edab96453c7c}" DisplayName="Category" Required="TRUE" Name="Category" />
+        <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" DisplayName="$Resources:core,URL;" Name="URL" />
+      </FieldRefs>
+    </ContentType>
+    </ContentTypes>
+    
+    <Fields>
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{b51d0e94-ea34-4db6-9102-430a20ccbdea}" Name="Comment" DisplayName="Comment" Type="Note" Required="FALSE" NumLines="6" Description="Comment for finding" Group="Key Word App"></Field>
+      <Field ID="{f76c28d0-b6a7-4866-b804-922edb16310c}" Name="IsDocument" DisplayName="Is Document" Type="Text" Required="FALSE" Group="Key Word App"></Field>
+      <Field ID="{64482876-c829-45d2-a558-d8d2a9fa0df8}" Name="Whitelist" DisplayName="Is Whitelisted" Type="Boolean" Required="TRUE" Group="Key Word App">
+        <Default>0</Default>
+      </Field>
+      <Field ID="{0e162b82-76d4-450b-b0f3-1a5b5cda4e7d}" Name="DeletionCandidate" DisplayName="Deletion Candidate" Type="Boolean" Required="FALSE" Group="Key Word App">
+        <Default>0</Default>
+      </Field>
+      <Field ID="{cad4f326-8830-4413-8e96-7c4a460e0c43}" Name="ItemLastModified" DisplayName="Item Last Modified" Type="Text" Required="FALSE" Group="Key Word App"></Field>
+      <Field ID="{517dc9b9-2a22-4033-8134-1719a3b2afc6}" Name="IsQuarantined" DisplayName="Is Quarantined" Type="Boolean" Required="FALSE" Group="Key Word App"><Default>0</Default></Field><Field ID="{b48c8c70-6d8c-4213-ac82-edab96453c7c}" Name="Category" DisplayName="Category" Type="MultiChoice" Required="TRUE" Group="Key Word App"></Field>
+      <Field ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="URL" Group="$Resources:core,Base_Columns;" Type="URL" DisplayName="$Resources:core,URL;" />
+    </Fields>
+    
+    <Views>
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>~site/Scripts/jslinkwordsearch.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="Comment" />
+          <FieldRef Name="IsDocument" />
+          <FieldRef Name="Whitelist" />
+          <FieldRef Name="DeletionCandidate" />
+          <FieldRef Name="ItemLastModified" />
+          <FieldRef Name="IsQuarantined" />
+          <FieldRef Name="Category" />
+          <FieldRef Name="URL" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef>
+         </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="d1da7fa7-a2b7-4e9a-972e-64d295c64cee" DisplayName="Overview" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Overview.aspx">
+        <RowLimit>20</RowLimit>
+        <ViewFields>
+          <FieldRef Name="URL" />
+          <FieldRef Name="IsDocument" />
+          <FieldRef Name="Comment" />
+        </ViewFields>
+        <Query />
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
